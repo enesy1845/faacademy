@@ -276,7 +276,7 @@ textarea:focus-visible {
 
 .detail-block img {
   border-radius: 14px;
-  height: 220px;
+  /* height: 220px; */
   width: 100%;
   object-fit: cover;
 }
@@ -422,6 +422,11 @@ textarea:focus-visible {
   margin: 0.25rem 0 0;
   font-size: 0.95rem;
   color: #0b4f8c;
+}
+
+.form-status.success {
+  color: #0f766e;
+  font-weight: 700;
 }
 
 input,

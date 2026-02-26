@@ -8,6 +8,8 @@ const lightbox = document.getElementById('lightbox');
 const modalImage = document.getElementById('modalImage');
 const modalClose = document.getElementById('modalClose');
 const backToTop = document.getElementById('backToTop');
+const formStatus = document.getElementById('formStatus');
+const nextUrl = document.getElementById('nextUrl');
 const detailLinks = Array.from(document.querySelectorAll('[data-detail-target]'));
 const sectionIds = ['programs', 'gallery', 'parents', 'about', 'contact'];
 
@@ -136,6 +138,20 @@ window.addEventListener('scroll', () => {
 backToTop.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+if (nextUrl) {
+  const redirectUrl = `${window.location.origin}${window.location.pathname}?sent=1#contact`;
+  nextUrl.value = redirectUrl;
+}
+
+if (formStatus) {
+  const params = new URLSearchParams(window.location.search);
+  if (params.get('sent') === '1') {
+    formStatus.textContent = 'Thank you. Your message has been sent.';
+    formStatus.classList.add('success');
+    history.replaceState({}, '', `${window.location.pathname}#contact`);
+  }
+}
 
 document.getElementById('year').textContent = new Date().getFullYear();
 
