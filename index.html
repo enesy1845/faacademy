@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kidvanceacademy one-page site for kids programs in dance, games, and drawing." />
+  <title>Kidvanceacademy | Kids Learning & Movement</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a href="#top" class="brand" aria-label="Kidvanceacademy Home">
+        <img src="assets/images/brand/logo.svg" alt="Kidvanceacademy Logo" width="44" height="44" />
+        <span>Kidvanceacademy</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-controls="primaryNav" aria-expanded="false" aria-label="Open navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="primary-nav" id="primaryNav" aria-label="Primary navigation">
+        <a href="#programs">Programs</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#parents">For Parents</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero section" id="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="kicker">Move. Imagine. Grow.</p>
+          <h1 id="hero-title">Fun learning journeys that build confident, curious kids.</h1>
+          <p>Kidvanceacademy blends movement, creativity, and cognitive play to help children build skills they can use in school and life.</p>
+          <div class="hero-actions">
+            <a href="#programs" class="btn btn-secondary">Explore Programs</a>
+          </div>
+        </div>
+        <div class="hero-media" aria-hidden="true">
+          <!-- Replace this image with your own (optimized WebP) -->
+          <img src="assets/images/hero/hero-left.webp" alt="" loading="eager" decoding="async" />
+          <!-- Replace this image with your own (optimized WebP) -->
+          <img src="assets/images/hero/hero-right.webp" alt="" loading="eager" decoding="async" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="programs" aria-labelledby="programs-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker">Programs</p>
+          <h2 id="programs-title">Designed for joyful development</h2>
+        </div>
+
+        <div class="card-grid">
+          <article class="program-card">
+            <img src="assets/icons/folk-dance.svg" alt="" width="28" height="28" />
+            <h3>Folk Dance</h3>
+            <p>Rhythm, teamwork, memory, and cultural expression through guided movement.</p>
+            <button class="inline-link" data-detail-target="detail-folk">Learn more</button>
+          </article>
+          <article class="program-card">
+            <img src="assets/icons/brain-games.svg" alt="" width="28" height="28" />
+            <h3>Brain Games</h3>
+            <p>Logic and attention games that boost focus, problem solving, and confidence.</p>
+            <button class="inline-link" data-detail-target="detail-games">Learn more</button>
+          </article>
+          <article class="program-card">
+            <img src="assets/icons/drawing.svg" alt="" width="28" height="28" />
+            <h3>Visual Intelligence &amp; Drawing</h3>
+            <p>Observation and creativity exercises that strengthen visual thinking.</p>
+            <button class="inline-link" data-detail-target="detail-drawing">Learn more</button>
+          </article>
+          <article class="program-card">
+            <img src="assets/icons/movement.svg" alt="" width="28" height="28" />
+            <h3>Dance &amp; Movement</h3>
+            <p>Energy-rich sessions that support coordination, expression, and posture.</p>
+            <button class="inline-link" data-detail-target="detail-movement">Learn more</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="program-details" aria-labelledby="details-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker">Program Details</p>
+          <h2 id="details-title">What each program includes</h2>
+        </div>
+
+        <article id="detail-folk" class="detail-block">
+          <img src="assets/images/programs/program-dance.webp" alt="Kids practicing folk dance in class" loading="lazy" decoding="async" />
+          <div>
+            <h3>Folk Dance</h3>
+            <h4>What kids gain</h4>
+            <ul>
+              <li>Improved coordination and rhythm</li>
+              <li>Team awareness and confidence</li>
+              <li>Cultural appreciation through movement</li>
+            </ul>
+            <h4>Typical session</h4>
+            <ol>
+              <li>Warm-up and rhythm intro</li>
+              <li>Step-by-step choreography</li>
+              <li>Group performance and reflection</li>
+            </ol>
+            <p><strong>Age groups:</strong> 5-7, 8-10, 11-13 (customize as needed).</p>
+          </div>
+        </article>
+
+        <article id="detail-games" class="detail-block">
+          <img src="assets/images/programs/program-games.webp" alt="Kids doing classroom brain game activities" loading="lazy" decoding="async" />
+          <div>
+            <h3>Brain Games</h3>
+            <h4>What kids gain</h4>
+            <ul>
+              <li>Stronger focus and working memory</li>
+              <li>Faster strategic thinking</li>
+              <li>Healthy persistence with challenges</li>
+            </ul>
+            <h4>Typical session</h4>
+            <ol>
+              <li>Quick challenge rounds</li>
+              <li>Logic game stations</li>
+              <li>Cooperative puzzle wrap-up</li>
+            </ol>
+            <p><strong>Age groups:</strong> 6-8, 9-11, 12-14 (customize as needed).</p>
+          </div>
+        </article>
+
+        <article id="detail-drawing" class="detail-block">
+          <img src="assets/images/programs/program-drawing.webp" alt="Kids drawing shapes and creative scenes" loading="lazy" decoding="async" />
+          <div>
+            <h3>Visual Intelligence &amp; Drawing</h3>
+            <h4>What kids gain</h4>
+            <ul>
+              <li>Visual-spatial reasoning</li>
+              <li>Fine motor control and patience</li>
+              <li>Creative confidence in expression</li>
+            </ul>
+            <h4>Typical session</h4>
+            <ol>
+              <li>Observation exercise</li>
+              <li>Technique and sketch practice</li>
+              <li>Share-and-feedback showcase</li>
+            </ol>
+            <p><strong>Age groups:</strong> 5-7, 8-10, 11-13 (customize as needed).</p>
+          </div>
+        </article>
+
+        <article id="detail-movement" class="detail-block">
+          <img src="assets/images/programs/program-movement.webp" alt="Kids in movement and coordination class" loading="lazy" decoding="async" />
+          <div>
+            <h3>Dance &amp; Movement</h3>
+            <h4>What kids gain</h4>
+            <ul>
+              <li>Balance, posture, and flexibility</li>
+              <li>Body awareness and confidence</li>
+              <li>Expressive movement skills</li>
+            </ul>
+            <h4>Typical session</h4>
+            <ol>
+              <li>Dynamic warm-up</li>
+              <li>Movement drills and combinations</li>
+              <li>Music-based cool down</li>
+            </ol>
+            <p><strong>Age groups:</strong> 4-6, 7-9, 10-12 (customize as needed).</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="gallery" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker">Gallery</p>
+          <h2 id="gallery-title">Moments from class</h2>
+        </div>
+
+        <div class="gallery-controls" role="toolbar" aria-label="Gallery filters">
+          <button class="filter-btn is-active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="dance">Dance</button>
+          <button class="filter-btn" data-filter="games">Games</button>
+          <button class="filter-btn" data-filter="drawing">Drawing</button>
+        </div>
+
+        <div class="gallery-grid" id="galleryGrid">
+          <button class="gallery-item" data-category="dance" data-index="0"><img src="assets/images/gallery/gallery-01.webp" alt="Dance class group pose" loading="lazy" /></button>
+          <button class="gallery-item" data-category="dance" data-index="1"><img src="assets/images/gallery/gallery-02.webp" alt="Kids folk dance circle" loading="lazy" /></button>
+          <button class="gallery-item" data-category="games" data-index="2"><img src="assets/images/gallery/gallery-03.webp" alt="Puzzle teamwork session" loading="lazy" /></button>
+          <button class="gallery-item" data-category="drawing" data-index="3"><img src="assets/images/gallery/gallery-04.webp" alt="Colorful drawing activity" loading="lazy" /></button>
+          <button class="gallery-item" data-category="games" data-index="4"><img src="assets/images/gallery/gallery-05.webp" alt="Logic game board challenge" loading="lazy" /></button>
+          <button class="gallery-item" data-category="drawing" data-index="5"><img src="assets/images/gallery/gallery-06.webp" alt="Kids sketching with pencils" loading="lazy" /></button>
+          <button class="gallery-item" data-category="dance" data-index="6"><img src="assets/images/gallery/gallery-07.webp" alt="Movement exercise with music" loading="lazy" /></button>
+          <button class="gallery-item" data-category="games" data-index="7"><img src="assets/images/gallery/gallery-08.webp" alt="Memory game in small groups" loading="lazy" /></button>
+          <button class="gallery-item" data-category="drawing" data-index="8"><img src="assets/images/gallery/gallery-09.webp" alt="Drawing showcase wall" loading="lazy" /></button>
+          <button class="gallery-item" data-category="dance" data-index="9"><img src="assets/images/gallery/gallery-10.webp" alt="Dance warm-up sequence" loading="lazy" /></button>
+          <button class="gallery-item" data-category="games" data-index="10"><img src="assets/images/gallery/gallery-11.webp" alt="Children solving pattern cards" loading="lazy" /></button>
+          <button class="gallery-item" data-category="drawing" data-index="11"><img src="assets/images/gallery/gallery-12.webp" alt="Creative art time with markers" loading="lazy" /></button>
+        </div>
+
+        <div class="center">
+          <button class="btn btn-secondary" id="loadMoreBtn">Load more</button>
+        </div>
+      </div>
+
+      <div class="modal" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Image preview">
+        <button class="modal-close" id="modalClose" aria-label="Close image preview">&times;</button>
+        <img id="modalImage" src="" alt="" />
+      </div>
+    </section>
+
+    <section class="section section-muted" id="parents" aria-labelledby="parents-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker">For Parents</p>
+          <h2 id="parents-title">Clear support for every family</h2>
+        </div>
+        <div class="trust-grid">
+          <article>
+            <h3>Safety &amp; Support</h3>
+            <p>Small groups, guided instruction, and child-centered routines in a welcoming environment.</p>
+          </article>
+          <article>
+            <h3>Visible Progress</h3>
+            <p>Skill milestones and age-appropriate goals help you track growth across each term.</p>
+          </article>
+          <article>
+            <h3>Communication</h3>
+            <p>Regular updates, feedback touchpoints, and easy access to instructors when you need it.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div>
+          <p class="kicker">About</p>
+          <h2 id="about-title">Our mission is to help kids thrive through joyful learning.</h2>
+          <p>At Kidvanceacademy, we combine creative movement, strategic play, and visual expression so children build confidence while enjoying the process.</p>
+          <h3>Our values</h3>
+          <ul>
+            <li>Respect every learner's pace</li>
+            <li>Practice with consistency and kindness</li>
+            <li>Celebrate effort, curiosity, and teamwork</li>
+          </ul>
+        </div>
+        <img src="assets/images/programs/program-movement.webp" alt="Kids smiling during creative class" loading="lazy" decoding="async" />
+      </div>
+    </section>
+
+    <section class="section section-cta" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div>
+          <p class="kicker">Contact</p>
+          <h2 id="contact-title">Ask us a question or request details</h2>
+          <p>Fill the form and your email app will open with a prefilled message to Kidvanceacademy.</p>
+        </div>
+
+        <form id="contactForm" class="contact-form" novalidate>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="interest">Interest</label>
+          <select id="interest" name="interest" required>
+            <option value="">Select a program</option>
+            <option>Folk Dance</option>
+            <option>Brain Games</option>
+            <option>Visual Intelligence &amp; Drawing</option>
+            <option>Dance &amp; Movement</option>
+          </select>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button class="btn btn-primary" type="submit">Send inquiry</button>
+          <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+
+          <!-- Optional Formspree setup:
+            1) Create a Formspree form endpoint.
+            2) Add data-formspree-endpoint="https://formspree.io/f/your-id" to this form.
+            3) Keep this JS file: it will try Formspree first, then mailto fallback.
+          -->
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>&copy; <span id="year"></span> Kidvanceacademy. All rights reserved.</p>
+      <div class="social-links" aria-label="Social links">
+        <a href="https://www.instagram.com/_cizgim_resim_atolyesi_?igsh=eGRhN2V6M3F0dTJu" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">Top</button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
