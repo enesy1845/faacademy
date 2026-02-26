@@ -8,15 +8,12 @@ const lightbox = document.getElementById('lightbox');
 const modalImage = document.getElementById('modalImage');
 const modalClose = document.getElementById('modalClose');
 const backToTop = document.getElementById('backToTop');
-const contactForm = document.getElementById('contactForm');
-const formStatus = document.getElementById('formStatus');
 const detailLinks = Array.from(document.querySelectorAll('[data-detail-target]'));
 const sectionIds = ['programs', 'gallery', 'parents', 'about', 'contact'];
 
 let currentFilter = 'all';
 let visibleCount = 6;
 let modalOpener = null;
-let fallbackMessage = '';
 
 const applyGalleryVisibility = () => {
   const filteredItems = galleryItems.filter((item) => currentFilter === 'all' || item.dataset.category === currentFilter);
@@ -138,50 +135,6 @@ window.addEventListener('scroll', () => {
 
 backToTop.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
-});
-
-contactForm.addEventListener('submit', (event) => {
-  event.preventDefault();
-
-  if (!contactForm.checkValidity()) {
-    contactForm.reportValidity();
-    return;
-  }
-
-  const formData = new FormData(contactForm);
-  const name = String(formData.get('name') || '').trim();
-  const email = String(formData.get('email') || '').trim();
-  const interest = String(formData.get('interest') || '').trim();
-  const message = String(formData.get('message') || '').trim();
-  const recipient = 'digitaldataliteracy@gmail.com';
-  const isFormspreeEnabled = Boolean(contactForm.dataset.formspreeEndpoint);
-
-  fallbackMessage = `Name: ${name}\nEmail: ${email}\nInterest: ${interest}\n\nMessage:\n${message}`;
-
-  if (isFormspreeEnabled) {
-    fetch(contactForm.dataset.formspreeEndpoint, {
-      method: 'POST',
-      headers: { Accept: 'application/json' },
-      body: formData
-    })
-      .then((response) => {
-        if (!response.ok) throw new Error('Request failed');
-        formStatus.textContent = 'Message sent successfully.';
-        contactForm.reset();
-      })
-      .catch(() => {
-        formStatus.textContent = 'Could not send via form endpoint. Opening email app instead.';
-        const subject = encodeURIComponent(`Inquiry - ${interest}`);
-        const body = encodeURIComponent(fallbackMessage);
-        window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
-      });
-    return;
-  }
-
-  formStatus.textContent = 'Opening your email app.';
-  const subject = encodeURIComponent(`Inquiry - ${interest}`);
-  const body = encodeURIComponent(fallbackMessage);
-  window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
 });
 
 document.getElementById('year').textContent = new Date().getFullYear();

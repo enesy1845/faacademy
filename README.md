@@ -52,22 +52,18 @@ A fast, responsive, accessible single-page website template built with plain HTM
 - Client-side "Load more"
 - For Parents trust section
 - About section
-- Contact form with `mailto:` fallback + copy-text fallback
+- Contact form with free FormSubmit integration
 - Back-to-top button
 - Semantic HTML and keyboard-friendly interactions
 
 ## Contact Form Behavior
 
-Default form mode uses mailto fallback in JS:
+The contact form posts directly via FormSubmit (free):
 
-- Update recipient email in `assets/js/main.js`:
-  - `const recipient = 'hello@kidvanceacademy.com';`
-
-If you want direct form posting (without opening email app), add:
-
-- `data-formspree-endpoint="https://formspree.io/f/your-id"` to `<form id="contactForm">`
-
-Then JS will send with `fetch` and fall back to mailto if that request fails.
+- Form action in `index.html`:
+  - `action="https://formsubmit.co/digitaldataliteracy@gmail.com"`
+- First submission requires activation from an email sent by FormSubmit.
+- After activation, form submissions go to the configured inbox.
 
 ## Practical Image Replacement
 
