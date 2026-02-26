@@ -404,6 +404,26 @@ textarea:focus-visible {
   box-shadow: var(--shadow);
 }
 
+.certificates-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.certificate-card {
+  margin: 0;
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.certificate-card img {
+  width: 100%;
+  height: clamp(220px, 36vw, 300px);
+  object-fit: cover;
+}
+
 .section-cta {
   background: linear-gradient(180deg, #e6f2ff 0%, #f8fafc 55%);
 }
@@ -550,6 +570,10 @@ select {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .certificates-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .footer-wrap {
     flex-direction: row;
     align-items: center;
@@ -572,6 +596,10 @@ select {
   }
 
   .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .certificates-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
