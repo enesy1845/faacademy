@@ -404,6 +404,13 @@ textarea:focus-visible {
   box-shadow: var(--shadow);
 }
 
+.about-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1rem;
+}
+
 .certificates-grid {
   display: grid;
   grid-template-columns: 1fr;
